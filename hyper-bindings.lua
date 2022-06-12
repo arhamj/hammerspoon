@@ -13,9 +13,8 @@ function hyperFocusOrOpen(key, app)
     hs.hotkey.bind(HYPER, key, function() focusOrOpen(app) end)
 end
 
--- creates callback function to select application windows by application name
 function mkFocusByPreferredApplicationTitle(stopOnFirst, ...)
-    local arguments = {...} -- create table to close over variadic args
+    local arguments = {...}
     return function()
         local nowFocused = hs.window.focusedWindow()
         local appFound = false
@@ -45,7 +44,6 @@ local applicationHotkeys = {
     a = 'Activity monitor',
     b = 'Brave Browser',
     c = 'Visual Studio Code',
-    f = 'Franz',
     p = 'Postman',
     w = 'Bitwarden',
     h = 'Hammerspoon',

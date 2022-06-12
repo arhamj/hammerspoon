@@ -23,8 +23,6 @@ function loadKeychainPasswordByAccount(account)
     return item.password
 end
 
--- log debug info to Hyperspoon Console
--- We can disable all logging in one place
 function debuglog(text)
     hs.console.printStyledtext("DEBUG: "..tostring(text))
 end
@@ -39,7 +37,6 @@ end
 alert.show(table.concat(buf))
 
 ---init
-
 require 'hyper-bindings'
 require 'hold-to-quit'
 require 'audio-watcher'
