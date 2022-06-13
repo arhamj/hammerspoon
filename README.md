@@ -40,13 +40,16 @@ mkdir ~/.hammerspoon/Spoons
 - `Caps + 0` = Reload hammerspoon config
 - `Caps +` = Open respective apps
 ```
-    a = 'Activity monitor',
-    b = 'Brave Browser',
-    c = 'Visual Studio Code',
-    p = 'Postman',
-    w = 'Bitwarden',
-    h = 'Hammerspoon',
-    n = 'Notes',
+    a = 'Activity monitor'
+    b = 'Brave Browser'
+    c = 'Visual Studio Code'
+    p = 'Postman'
+    w = 'Bitwarden'
+    h = 'Hammerspoon'
+    n = 'Notes'
     s = 'Slack'
+    t = 'Telegram Desktop'
 ```
 - `Caps + m` = Toggle mic mute
+- `Caps + v` = Connect to VPN
+- `Caps + d` = Disconnect from VPN
