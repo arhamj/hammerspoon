@@ -46,6 +46,7 @@ mkdir ~/.hammerspoon/Spoons
     p = 'Postman',
     w = 'Bitwarden',
     h = 'Hammerspoon',
-    n = 'Notes'
+    n = 'Notes',
+    s = 'Slack'
 ```
 - `Caps + m` = Toggle mic mute
