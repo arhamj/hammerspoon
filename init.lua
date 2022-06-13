@@ -1,4 +1,3 @@
----init
 alert = require 'hs.alert'
 buf = {}
 log = hs.logger.new('main', 'info')
@@ -31,13 +30,14 @@ if hs.wasLoaded == nil then
     hs.wasLoaded = true
     table.insert(buf, "Hammerspoon loaded.")
 else
-    table.insert(buf, "Hammerspoon re-loaded. ")
+    table.insert(buf, "Hammerspoon re-loaded.")
 end
 
 alert.show(table.concat(buf))
 
 ---init
-require 'hyper-bindings'
-require 'hold-to-quit'
-require 'audio-watcher'
-require 'mic-mute'
+require 'hyper_bindings'
+require 'hold_to_quit'
+require 'audio_watcher'
+require 'mic_mute'
+require 'ping'

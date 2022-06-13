@@ -1,4 +1,3 @@
---- reload Hammerspoon config
 hs.hotkey.bind(HYPER, "0", function()
     hs.reload()
 end)
@@ -48,7 +47,8 @@ local applicationHotkeys = {
     w = 'Bitwarden',
     h = 'Hammerspoon',
     n = 'Notes',
-    s = 'Slack'
+    s = 'Slack',
+    t = 'Telegram Desktop'
 }
 for key, app in pairs(applicationHotkeys) do
     hyperFocusOrOpen(tostring(key), app)

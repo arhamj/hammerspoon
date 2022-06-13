@@ -1,4 +1,4 @@
-function toggle_audio_output()
+function ToggleAudioOutput()
     return function()
         local current = hs.audiodevice.defaultOutputDevice()
         local speakers = hs.audiodevice.findOutputByName('MacBook Pro Speakers')
@@ -14,7 +14,7 @@ function toggle_audio_output()
     end
 end
 
-hs.hotkey.bind(HYPER, "]", toggle_audio_output())
+hs.hotkey.bind(HYPER, "]", ToggleAudioOutput())
 
 function getCurrentOutputDevicePrefix()
     if(hs.audiodevice.defaultOutputDevice() ~= nil and hs.audiodevice.defaultOutputDevice():name() ~= nil) then
@@ -28,7 +28,7 @@ end
 
 audioMenu = hs.menubar.newWithPriority(2147483646)
 audioChanged()
-audioMenu:setClickCallback(toggle_audio_output())
+audioMenu:setClickCallback(ToggleAudioOutput())
 
 hs.audiodevice.watcher.setCallback(audioChanged)
 hs.audiodevice.watcher.start()
