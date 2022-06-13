@@ -1,8 +1,3 @@
-hs.hotkey.bind(HYPER, "0", function()
-    hs.reload()
-end)
-hs.notify.new({title="Hammerspoon", informativeText="Config loaded"}):send()
-
 function focusOrOpen(app)
     local focus = mkFocusByPreferredApplicationTitle(true, app)
     return (focus() or hs.application.launchOrFocus(app))
