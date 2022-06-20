@@ -44,7 +44,8 @@ local applicationHotkeys = {
     n = 'Notes',
     s = 'Slack',
     t = 'TablePlus',
-    d = 'Docker'
+    d = 'Docker',
+    g = 'Goland'
 }
 for key, app in pairs(applicationHotkeys) do
     hyperFocusOrOpen(tostring(key), app)
