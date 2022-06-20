@@ -49,7 +49,7 @@ mkdir ~/.hammerspoon/Spoons
     n = 'Notes'
     s = 'Slack'
     t = 'Telegram Desktop'
+    d = 'Docker'
 ```
 - `Caps + m` = Toggle mic mute
-- `Caps + v` = Connect to VPN
-- `Caps + d` = Disconnect from VPN
+- `Caps + v` = Toggle VPN connection
