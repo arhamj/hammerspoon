@@ -38,7 +38,7 @@ alert.show(table.concat(buf))
 ---init
 require 'hyper_bindings'
 require 'hold_to_quit'
-require 'audio_watcher'
+-- require 'audio_watcher'
 require 'mic_mute'
 require 'ping'
 require 'reload_config'

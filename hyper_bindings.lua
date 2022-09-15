@@ -8,7 +8,7 @@ function hyperFocusOrOpen(key, app)
 end
 
 function mkFocusByPreferredApplicationTitle(stopOnFirst, ...)
-    local arguments = {...}
+    local arguments = { ... }
     return function()
         local nowFocused = hs.window.focusedWindow()
         local appFound = false
@@ -38,7 +38,8 @@ local applicationHotkeys = {
     a = 'Activity monitor',
     b = 'Brave Browser',
     c = 'Visual Studio Code',
-    p = 'Postman',
+    -- p = 'Postman',
+    i = 'Insomnia',
     w = 'Bitwarden',
     h = 'Hammerspoon',
     n = 'Notes',
@@ -50,7 +51,3 @@ local applicationHotkeys = {
 for key, app in pairs(applicationHotkeys) do
     hyperFocusOrOpen(tostring(key), app)
 end
-
-
-
-
